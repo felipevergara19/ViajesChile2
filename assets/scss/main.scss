@@ -1,0 +1,130 @@
+// Variable overrides first
+$primary: #900;
+$enable-shadows: true;
+$prefix: "mo-";
+
+body{
+  background-color: black;
+}
+
+.navbar {
+  position: sticky;
+  width: 100%;
+  margin-left:8.4%;
+  z-index: 100; /* Asegúrate de que el navbar esté sobre cualquier otro contenido */
+}
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 2px solid white;
+
+  .carousel-item {
+    width: 100%;
+    display: none;
+    img {
+      height: 500px; // Altura por defecto en dispositivos grandes
+    }
+  }
+
+  @media (max-width: 768px) {
+    .carousel-item img {
+      height: 300px; // Altura en dispositivos con tamaño de pantalla pequeño
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  padding-top: 60px;
+  border-bottom: 2px solid white;
+ 
+  h1{
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  img{
+    height: 400px;
+  }
+  p{
+    color: white;
+  }
+
+}
+
+.cards {
+
+  width: 100%;
+  padding-top: 60px;
+  border-bottom: 2px solid white;
+
+  h1{
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
+
+.testimonio{
+
+  width: 100%;
+  padding-top: 60px;
+  align-items: center;
+  border-bottom: 2px solid white;
+
+  .testimonial-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente */
+    flex-direction: column; /* Para que el contenido esté en columnas */
+  }
+  
+  h1{
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  img{
+    
+    height: 50px;
+    border-radius: 25px;
+  }
+  p{
+    padding-left: 0%;
+    color: white;
+    text-align: center;
+  }
+  h2{
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+}
+
+footer {
+
+  width: 100%;
+  padding-top: 60px;
+  border-bottom: 2px solid white;
+
+  h1{
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  p{
+    padding-left: 0%;
+    color: white;
+  }
+  .form-label, .form-check-label{
+    padding-left: 0%;
+    color: white;
+  }
+}
+// Then import Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+
